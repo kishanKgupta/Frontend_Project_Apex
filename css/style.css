@@ -118,18 +118,51 @@ header {
     border-radius: 5px;
 }
 
-/* ===== PROJECT LINKS ===== */
-.project-links {
-    list-style: none;
+/* ===== PROJECT TABLES (NEW) ===== */
+.project-table {
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
 }
 
-.project-links li {
-    margin: 10px 0;
+.project-table h3 {
+    margin: 30px 0 10px;
+    color: #003366;
+    text-align: center;
 }
 
-.project-links a {
+.project-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background: white;
+}
+
+.project-table table,
+.project-table th,
+.project-table td {
+    border: 1px solid #003366;
+}
+
+.project-table th {
+    background: #003366;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.project-table td {
+    padding: 12px;
+}
+
+.project-table td a {
     color: #003366;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.project-table td a:hover {
+    text-decoration: underline;
 }
 
 /* ===== FOOTER ===== */
@@ -159,5 +192,12 @@ footer {
 
     .menu-icon {
         display: block;
+    }
+
+    /* Table responsive text */
+    .project-table table,
+    .project-table th,
+    .project-table td {
+        font-size: 14px;
     }
 }
